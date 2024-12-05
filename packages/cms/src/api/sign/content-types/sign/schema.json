@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "signs",
+  "info": {
+    "singularName": "sign",
+    "pluralName": "signs",
+    "displayName": "sign"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    },
+    "date": {
+      "type": "date",
+      "required": true,
+      "unique": true
+    },
+    "thumbnail": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}
